@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#heading {
+    font-size: 34px;
+    background-color: aquamarine;
+    /* margin: 20px; */
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.article {
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    font-size: medium;
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.green {
+    background-color: green;
+}
+
+/* #webpage {
+    width: 800px;;
+    height: 985px;;
+} */
+
+/* #youtube {
+
+} */
+
+
+

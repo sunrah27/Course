@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form onSubmit="alert('Thank you for your feedback.');">
+        <fieldset>
+            <legend>Account Setup</legend>
+            
+            <div class="formline">
+                <label for="fname">First Name*</label>
+                <input id="fname" type="text" placeholder="First Name" required>
+            </div>
+
+            <div class="formline">
+                <label for="lname">Last Name*</label>
+                <input id="lname" type="text" placeholder="Lirst Name" required>
+            </div>
+
+            <div class="formline">
+                <label for="email">Email*</label>
+                <input id="email" type="email" placeholder="Email" required>
+            </div>
+
+            <div class="formline">
+                <label for="pass">Password*</label>
+                <input id="pass" type="password" maxlength="12" required>
+            </div>
+
+            <div class="formline">
+                <label for="rpass">Retype Password*</label>
+                <input id="rpass" type="password" maxlength="12" required>
+            </div>
+
+            <div class="formline">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="(+44) 7111 222 333">
+            </div>
+
+            <div class="formline">
+                <label for="bday">Date of Birth</label>
+                <input id="bday" type="date">
+            </div>
+
+            <div class="formline">
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="Luton">Luton</option>
+                    <option value="New Castle">New Castle</option>
+                    <option value="Birmingham">Birmingham</option>
+                </select>
+            </div>
+
+            <div class="formline">
+                <label for="html">What is your favourite programming language</label>
+                <div class="radiobtn">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+            </div>
+
+            <div class="formline checkbox" >
+                <label for="campaign">Would you like to receive promotional emails?</label>
+                <input id="campaign" type="checkbox">
+            </div>
+
+            <div class="formline">
+                <label for="myfile">Please upload a picture of yourself:</label>
+                <input type="file" id="myfile" name="filename">
+            </div>
+            
+            <div class="formline">
+                <label for="detail">Please give a fun fact about yourself</label>
+                <textarea id="detail" name="detail" rows="4" cols="30"></textarea>
+            </div>
+
+            <div class="formline buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

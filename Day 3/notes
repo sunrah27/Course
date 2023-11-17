@@ -1,0 +1,35 @@
+Restaurant
+
+section - header
+Large image of the restaurant
+
+section - nav
+- Menu
+- Contact
+- Map
+- Careers
+- Gallary
+
+section - main content
+Menu
+- Menu items
+- Filter
+-- Vegeterian
+-- Vegan
+-- Gluten free
+-- Nut allergy
+-- Milk allergy
+- Image of dish
+- Detailed information
+
+section - contacts
+- Form
+
+section - address
+- Address
+- Google map
+
+section - gallary
+- Series of images and videos
+
+section - Footer

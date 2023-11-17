@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1;
+}
+
+.mask_top {
+    top: 0;
+}
+
+.mask_bottom {
+    bottom: 0;
+}
+
+.mask_top, .mask_bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: max(20px, 4vmin);
+    background-color: black;
+}
+
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+
+#Page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    white-space: nowrap;  
+}
+
+#background {
+    position: fixed;
+    z-index: 1;
+    left: max(20px, 4vmin);
+    right: max(20px, 4vmin);
+    top: max(20px, 4vmin);
+    bottom: max(20px, 4vmin);
+}
+
+main, canvas {
+    display: block;
+}
+
+canvas {
+    aspect-ratio: auto 970 / 702;
+}
+
+div {
+    display: block;
+}
+
+.frame {
+    position: fixed;
+    z-index: 10;
+    left: max(20px, 4vmin);
+    right: max(20px, 4vmin);
+    top: max(20px, 4vmin);
+    bottom: max(20px, 4vmin);
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+.frame_line {
+    position: absolute;
+    background-color: white;
+    opacity: .5;
+}
+
+.frame_line-left {
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.frame_line-right {
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.frame_line-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.frame_line-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+}
+
+h1 {
+    display: block;
+}
+
+header {
+    display: block;
+}
+
+.siteHeader {
+    position: fixed;
+    z-index: 10;
+    left: calc(max(20px, 4vmin)*2);
+    top: calc(max(20px, 4vmin)*2);
+    mix-blend-mode: difference;
+}
+
+.siteHeader_title {
+    margin: -0.1em 0 0 -0.04em;
+    font-weight: 50;
+    font-size: 40px;
+}
+
+.siteHeader_label {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.siteHeader_nav {
+    margin-top: 50px;
+}
+
+.siteHeader_nav ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.siteHeader_navol li {
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

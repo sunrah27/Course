@@ -1,0 +1,73 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.tables {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+fieldset {
+    width: 600px;
+}
+
+.formline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch, flex-start, flex-end, center;
+    padding: 5px;
+}
+
+.formline > label {
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.formline > input {
+    width: 200px;
+    flex: 1;
+}
+
+.formline > select {
+    width: 200px;
+    flex: 1;
+}
+
+.formline > textarea {
+    width: 200px;
+    flex: 1;
+}
+
+.radiobtn {
+    width: 200px;
+    flex: 1;
+}
+
+.buttons > input {
+    /* padding: 5px; */
+    margin: 20px;
+    width: 100px;
+}
+
+.checkbox {
+    justify-content: left;
+}
+
+input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    min-width: 10px;
+}
