@@ -4,6 +4,11 @@ body {
     margin: 5px;
 }
 
+.container {
+    width: 600px;
+    margin: auto;
+}
+
 .tables {
     border-collapse: collapse;
     width: 500px;
