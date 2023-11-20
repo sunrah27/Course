@@ -1,0 +1,79 @@
+.newfont {
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    margin: auto;
+}
+
+body {
+    max-width: 1000px;
+    background-color: grey;
+    color: white;
+}
+
+h1 {
+    padding: 0;
+}
+
+p:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.button {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.circleborder {
+    border: 10px solid black;
+    border-image: linear-gradient(#c6ffdd, #fbd786, #f7797d) 30;
+    height: 100px;
+    margin: 10px 0;
+    background-color: white;
+    width: fit-content;
+    padding: 3px;
+}
+
+.circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#box1 {
+    background-image: linear-gradient(90deg,#fc5c7d, #6a82fb);
+    border-radius: 50%;
+}
+
+#box2 {
+    background-image: linear-gradient(180deg,#5cfcac, #6a82fb);
+    border-radius: 50%;
+}
+
+#box3 {
+    background-image: linear-gradient(45deg,#fc5c7d, #d4fb6a);
+    border-radius: 50%;
+}
+
+#box4 {
+    background-image: linear-gradient(120deg,#fc5c7d, #6a82fb);
+    border-radius: 50%;
+}
+
+#box5 {
+    background-image: linear-gradient(90deg,#c6ffdd, #fbd786, #f7797d);
+    border-radius: 50%;
+}
