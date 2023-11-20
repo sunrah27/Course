@@ -4,11 +4,12 @@
     color: #ccc;
     margin: 0;
     padding: 0;
+    font-size: 32px;
 }
 
 body {
-    width: 800px;
-    height: 100%;
+    max-width: 1200px;
+    height: 100vh;
     margin: auto;
 }
 
@@ -17,7 +18,8 @@ body {
     padding-right: 20px;
     padding-bottom: 20px;
     border: 2px solid white;
-    height: 100%;
+    height: 800px;
+    /* width: 100%; */
     margin: 20px;
 }
 
@@ -25,6 +27,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
+    font-size: 1.5rem;
 }
 
 li {
@@ -36,6 +39,7 @@ li {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 a {
