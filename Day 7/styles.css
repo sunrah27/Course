@@ -37,9 +37,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: #333; */
-    /* position: sticky;
-    top: 0; */
 }
 
 li {
@@ -79,4 +76,12 @@ li a:hover {
     text-align: center;
     border: 1px solid white;
     width: 25px;
+}
+
+.flex2 {
+    display: flex;
+    margin-top: -20px;
+    margin-left: -50px;
+    margin-right: -50px;
+    overflow: visible;
 }

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    width: 800px;
+    margin: auto;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content p:nth-child(odd) {
+    background: red;
+    color: white;
+    text-shadow: 0 0 10 black;
+}
+  
+.content p:nth-child(even) {
+    background: lightgreen;
+}
+
+.content p:nth-child(1) {
+    margin-top: 20px;
+}
+
+.content p::before {
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+.card {
+    margin: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.container {
+    padding: 10px 16px;
+}
+
+.card img {
+    width: 100%;
+    overflow: hidden;
+}

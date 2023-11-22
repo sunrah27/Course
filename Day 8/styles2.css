@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    float: left;
+    background-color: #333;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a:hover {
+    background-color: #111;
+    text-decoration: underline;
+}
+
+/* Desktop and Large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    nav, .dropdown-content {
+        background-color: rgb(27, 0, 177);
+    }
+}
+
+/* Small screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav, .dropdown-content {
+        background-color: rgb(177, 0, 0);
+    }
+}
+
+/* iPads and Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav, .dropdown-content {
+        background-color: rgb(12, 177, 0);
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    nav, .dropdown-content {
+        background-color: rgb(255, 0, 140);
+    }
+}
