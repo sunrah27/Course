@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 /* essential part */
 nav ul {
     padding: 0;
@@ -12,7 +16,8 @@ nav>ul>li {
 nav ul ul {
     display: none;
     position: absolute;
-    top: 100%; left: 0;
+    top: 100%;
+    left: 0;
 }
 
 nav ul ul ul {
@@ -24,40 +29,49 @@ nav li:hover>ul {
     display: block;
 }
 
-
 /* non-essential stuff, just prettifying */
 nav {
-  font: 1em/1.4 Arial,Verdana,sans-serif;
+    font: 1em/1.4 Arial,Verdana,sans-serif;
 }
+
 nav ul ul {
-  min-width: 13em;
-  box-shadow: inset 0 0 2px;
+    min-width: 13em;
+    background-color: #333;
 }
+
 nav li {
-  min-width: 10em;
-  text-decoration: none;
+    min-width: 13em;
+    text-decoration: none;
 }
+
 nav a {
-  display: block;
-  padding: .5em;
-  text-decoration: none;
+    display: block;
+    padding: .5em;
+    text-decoration: none;
 }
+
 nav>ul>li {
-  margin: 0 1px;
-  background: linear-gradient(#006CBC, #004184);
+    padding: 14px 16px;
+    background-color: #333;
 }
+
 nav>ul>li:hover {
-  background: linear-gradient(#60ACCE, #0A6CB2);
+    background-color: black;
 }
+
 nav>ul>li>a {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
+    color: white;
+    text-align: center;
 }
+
 nav ul ul a {
-  font-weight: 700;
+    color: white;
+    font-weight: 700;
+    padding: 14px 16px;
+    min-width: 13em;
 }
+
 nav ul ul a:hover {
-  background: navy;
-  color: white;
+    background-color: black;
+    text-decoration: underline;
 }
