@@ -1,0 +1,32 @@
+.mainform, #accordion{
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 300px;
+    color: #f5f6f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 1em;
+}
+
+.form-label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.form-control {
+    margin: 5px auto;
+    min-width: 300px;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #0a0a23;
+    border-color: #0a0a23;
+    border-radius: 0;
+}
+
+.form-text {
+    color: #f5f6f7;
+}
+
+.container-xxl {
+    background-color: #1b1b32;
+}
