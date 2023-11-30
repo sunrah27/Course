@@ -78,6 +78,7 @@ ul li {
 }
 
 .btnAddToCart {
+    cursor: pointer;
     width: 100%;
     text-align: center;
     border: 1px solid red;
