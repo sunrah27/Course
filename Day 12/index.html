@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Materialize Framework</title>
+</head>
+<body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+
+        <div class="row">
+            <div class="col s1 red lighten-2">1</div>
+            <div class="col s1 pink lighten-2">2</div>
+            <div class="col s1 purple lighten-2">3</div>
+            <div class="col s1 deep-purple lighten-2">4</div>
+            <div class="col s1 indigo lighten-2">5</div>
+            <div class="col s1 blue lighten-2">6</div>
+            <div class="col s1 light-blue lighten-2">7</div>
+            <div class="col s1 cyan lighten-2">8</div>
+            <div class="col s1 teal lighten-2">9</div>
+            <div class="col s1 green lighten-2">10</div>
+            <div class="col s1 light-green lighten-2">11</div>
+            <div class="col s1 lime lighten-2">12</div>
+            <div class="col s6 lime lighten-2">6-columns (one-half)</div>
+            <div class="col s6 orange lighten-2">6-columns (one-half)</div>
+        </div>
+        <div class="row">
+            <div class="col s12 deep-orange lighten-2 "><p>s12</p></div>
+            <div class="col s6 m4 l2 red lighten-2"><p>s12 m4</p></div>
+            <div class="col s12 m4 l8 green lighten-2"><p>s12 m4</p></div>
+            <div class="col s6 m4 l2 red lighten-2"><p>s12 m4</p></div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l3 pink lighten-2"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 purple lighten-2"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 pink lighten-2"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 purple lighten-2"><p>s12 m6 l3</p></div>
+        </div>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="https://source.unsplash.com/random/800x600?sig=1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://source.unsplash.com/random/800x600?sig=2"></a>
+            <a class="carousel-item" href="#three!"><img src="https://source.unsplash.com/random/800x600?sig=3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://source.unsplash.com/random/800x600?sig=4"></a>
+            <a class="carousel-item" href="#five!"><img src="https://source.unsplash.com/random/800x600?sig=5"></a>
+        </div>
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax-section">
+                <div class="parallax-bg" style="background: url('https://source.unsplash.com/random/800x600?sig=5) center/cover no-repeat;"></div>
+                <div class="parallax-content">
+                    <h1>Slide 1</h1>
+                    <p>This is the first slide.</p>
+                </div>
+            </div>
+            <div class="parallax-section">
+                <div class="parallax-bg" style="background: url('https://source.unsplash.com/random/800x600?sig=6') center/cover no-repeat;"></div>
+                <div class="parallax-content">
+                    <h1>Slide 2</h1>
+                    <p>This is the second slide.</p>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
