@@ -34,10 +34,20 @@ h1 {
     place-items: center;
     min-width: 350px;
     width: 350px;
-    margin: 10%;
+    margin: 10% 10% 20% 10%;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 0 #2d2e4d;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.card:not(hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
 }
 
 .planName, .price, .spec {
