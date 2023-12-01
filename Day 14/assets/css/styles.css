@@ -10,6 +10,7 @@
     max-width: 1440px;
     margin: 50px auto;
     border-radius: 10px;
+    padding-bottom: 50px;
 }
 
 h1, h2, p, li {
@@ -22,20 +23,20 @@ h1 {
 }
 
 .cardRow {
-    width: 90%;
-    /* max-width: 1100px; */
+    max-width: 90%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     background-color: #20283A;
-    place-items: center;
     min-width: 350px;
-    width: 350px;
-    margin: 10% 10% 20% 10%;
+    max-width: 350px;
+    margin: 20px;
     padding: 50px;
+    flex: 1 0 auto;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 0 #2d2e4d;
 }

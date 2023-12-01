@@ -5,21 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flip__container {
-    width: 100%;
-    min-height: 100vh;
+/* .flip__container {
     background-color: #2b2b2b;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .flip__card {
     width: 300px;
     height: 450px;
     cursor: pointer;
-    perspective: 1000px;
-    background-color: transparent;
+    perspective: 2000px;
 }
 
 .flip__card-inner {
@@ -40,7 +37,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -61,7 +57,7 @@
     transform: rotateY(180deg);
 }
 
-.border {
+.flip__border {
     box-sizing: border-box;
     position: absolute;
     top: 20px;
@@ -69,7 +65,7 @@
     right: 20px;
     left: 20px;
     border: 1px solid white;
-    overflow: hidden;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +73,52 @@
     height: 410px;
 }
 
-.flip__back-face .border h2, .flip__back-face .border p {
-    display: block;
-    width: 100%;
+.flip__name {
+    font-size: 2em;
     margin: 10px;
+}
+
+.flip__role {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.flip__social a i {
+    color: white;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(0, 172, 172);
+    border-radius: 50%;
+}
+.flip__social a i:hover {
+    color: teal;
+    background-color: white;
+}
+
+.flip__social a i:active {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.flip_btnResume {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin: 50px 10px 10px 10px;
+    padding: 15px 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.flip_btnResume:hover {
+    color: teal;
+    background-color: white;
+}
+
+
+.flip_btnResume:active {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
 }
