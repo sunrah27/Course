@@ -89,16 +89,3 @@ console.log('4 - d === c', d===c);
 console.log('5 - d > c', d>c);
 console.log('6 - e-c <= c+d', (e-c) <= (c+d));
 console.log('7 - e*c > d', (e*c)>d);
-
-(function () {
-    var oldLog = console.log;
-    console.log = function (message) {
-        // Append the message to the specified div
-        var consoleOutput = document.getElementById('console-output');
-        if (consoleOutput) {
-            consoleOutput.innerHTML += '<p>' + message + '</p>';
-        }
-        // You can also log to the browser console if needed
-        oldLog.apply(console, arguments);
-    };
-})();
