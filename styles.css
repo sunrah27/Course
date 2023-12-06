@@ -51,3 +51,23 @@ a:hover {
     text-decoration: underline;
     color: white;
 }
+
+.acc__block {
+    display: block;
+}
+
+.acc__panel {
+    display: none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.acc__header {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input:checked + .acc__panel {
+    display: block;
+}
