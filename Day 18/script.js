@@ -111,18 +111,38 @@ function mortgageApp(){
     };
 };
 
-appSelection = prompt('Which app do you want to run?\n\n 1 - homeSecurity()\n 2 - checkPassword()\n 3 - publicFare()\n 4 - onlinePurchase()\n 5 - mortgageApp()')
+//Task 5
+function studentGrade() {
 
-if (appSelection = 1) {
-    homeSecurity();
-} else if (appSelection = 2) {
-    checkPassword();
-} else if (appSelection = 3) {
-    publicFare();
-} else if (appSelection = 4) {
-    onlinePurchase();
-} else if (appSelection = 5) {
-    mortgageApp();   
-} else {
-    console.log('Invalid selection, shutting down.')
+    let studentScore = prompt('Please enter the students exam score:');
+    let maxScore = 100;
+
+    switch (true) {
+        case (studentScore >= 90):
+            console.log("Grade: A. You scored", studentScore, "out of 100");
+            if (studentScore === 100) {
+                console.log("Perfect score! Well done!");
+            }
+            break;
+
+        case (studentScore >= 80):
+            console.log("Grade: B");
+            if (studentScore >= 85) {
+                console.log("Good job! You're close to an A. You scored", studentScore, "out of 100");
+            }
+            break;
+
+        case (studentScore >= 70):
+            console.log("Grade: C");
+            if (studentScore >= 75) {
+                console.log("You're making progress. Keep it up! You scored", studentScore, "out of 100");
+            }
+            break;
+
+        default:
+            console.log("Grade: F");
+            console.log("Sorry, you did not pass. Consider studying more. You scored", studentScore, "out of 100");
+    }
 };
+
+console.log('Which app do you want to run?\n\n 1 - homeSecurity()\n 2 - checkPassword()\n 3 - publicFare()\n 4 - onlinePurchase()\n 5 - mortgageApp()\n 6 - studentGrade()')
