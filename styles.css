@@ -65,14 +65,11 @@ a:hover {
 
 .acc__arrow {
     color: white;
+    padding-left: 15px;
 }
 
 .acc__header:hover, .acc__header:hover .acc__arrow {
     color: red;
-}
-
-.acc__arrow {
-    padding-left: 15px;
 }
 
 .acc-trigger {
@@ -82,6 +79,7 @@ a:hover {
 .acc__panel {
     display: none;
     margin: 10px 0;
+    overflow: hidden;
 }
 
 .acc-trigger:checked + .acc__panel {
