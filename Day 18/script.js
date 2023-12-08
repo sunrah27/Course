@@ -146,3 +146,7 @@ function studentGrade() {
 };
 
 console.log('Which app do you want to run?\n\n 1 - homeSecurity()\n 2 - checkPassword()\n 3 - publicFare()\n 4 - onlinePurchase()\n 5 - mortgageApp()\n 6 - studentGrade()')
+
+let owner = {fname:'john', lname:'snow'};
+
+console.log(owner.values[1]);

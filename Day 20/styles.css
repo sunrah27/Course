@@ -1,0 +1,23 @@
+* {
+    margin: 20px;;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#age_input {
+    margin-right: 10px;
+}
+
+#confirm_message {
+    margin-top: 10px;
+    color: red;
+    display: none;
+}

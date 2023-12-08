@@ -1,0 +1,62 @@
+<!-- Multi-Arithmetic Calc consideratons:
+- How can the user choose their operation?
+// Option to select the operation
+- How does the calculating function know which operation is chosen?
+// If Else Statement which checks operator value
+- Are all the operations supported arithmetically?
+// All the operators have arithmetic code to support them
+- Does our calculating function need any information fed to it?
+// Fed with the operations (select) value. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator v1</title>
+</head>
+<body>
+    <form class="container calculator">
+        <input type="number" id="numberone"/>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="numbertwo"/> 
+        <input type="button" id="sumbtn" value="Evaluate" onclick="calculate()"/> 
+        <input type="number" id="result" disabled/>
+        <input type="reset" id="reset" name="reset">
+    </form>
+
+    <script>
+        function performOperation(valueOne, operator, valueTwo) {
+            switch (operator) {
+            case '+':
+                return Number(valueOne) + Number(valueTwo);
+            case '-':
+                return Number(valueOne) - Number(valueTwo);
+            case '*':
+                return Number(valueOne) * Number(valueTwo);
+            case '/':
+                return Number(valueOne) / Number(valueTwo);
+            default:
+                return NaN;
+            };
+        };
+
+        const operatorDropdown = document.getElementById('operator');
+        const numberOne = document.getElementById('numberone');
+        const numberTwo = document.getElementById('numbertwo');
+        const result = document.getElementById('result');
+            
+        function calculate() {
+            let selectedOperator = operatorDropdown.value;
+            let calculationResult = performOperation(numberOne.value, selectedOperator, numberTwo.value);
+            result.value = calculationResult.toString();
+        }
+    </script>
+</body>
+</html>
