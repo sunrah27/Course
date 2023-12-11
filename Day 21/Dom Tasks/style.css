@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#newListItem {
+    background-color: aqua;
+    color: fuchsia;
+}
+
+.listItems {
+    background-color: crimson;
+    color: white;
+}
