@@ -1,3 +1,11 @@
+// Things that can be improved
+// 1 - display the key and value in the local storage data after submission
+// 2 - check if a key already exists with a corresponding value
+// 3 - display notice when there is no data stored in local storage
+// 4 - add a counter of how much data is stored in local storage and how my storage space is remaining
+// 5 - improve the display of local storage data
+// 6 - import local storage data
+
 // Access all of our relevant elements from the DOM
 const inputKey = document.getElementById('key');
 const inputValue = document.getElementById('value');
@@ -49,7 +57,6 @@ function searchLocalStorage() {
         storageReadOut.append(newRead);
     }
 }
-
 
 // Event listners
 readLSBtn.addEventListener('click', (e) =>{
