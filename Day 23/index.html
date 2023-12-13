@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    <title>JS Local Storage</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header text-center">
+            <h1 class="title">Local Storage</h1>
+        </header>
+        <form id="inputForm" class="form" autocomplete="off">
+            <div class="formGroup">
+                <label for="key">Key: </label>
+                <input type="text" id="key" placeholder="Enter your key">
+                
+            </div>
+            <div class="formGroup">
+                <label for="value">Value: </label>
+                <input type="text" id="value" placeholder="Enter the value"> 
+            </div>
+            <div class="formGroup">
+                <button class="formBtn" id="submitBtn">Submit</button>
+                <button class="formBtn" id="clearBtn">Clear Storage</button>
+            </div>
+            <div class="formGroup">
+                <input type="text" id="searchLS" placeholder="Search local storage">
+                <button class="formBtn" id="readLSBtn">Read Storage</button>
+                <button class="formBtn" id="resetLSBtn">Reset</button>
+                <div id="storageReadOut">
+                    Local storage data
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

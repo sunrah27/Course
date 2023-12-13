@@ -1,9 +1,8 @@
 const eventBtn = document.getElementById('eventBtn');
 const eventImg = document.getElementById('flipImg');
+const imgStyle = window.getComputedStyle(eventImg);
 
 function showHideImg(){
-    var imgStyle = window.getComputedStyle(eventImg);
-
     if (imgStyle.display === 'none'){
         eventImg.style.display = 'block';
     } else {
