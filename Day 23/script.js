@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const readLocalStorage = () =>{
         console.log('readLocalStorage');
         localStorageBody.innerHTML = '';
-        if (localStorage.length = 0){
+        if (localStorage.length > 0){
             for (let i = 0; i < localStorage.length; i++) {
                 let key = localStorage.key(i);
                 let value = localStorage.getItem(key);
