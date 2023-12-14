@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #3939d6;
+    background-color: #222;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,8 +18,8 @@ body {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 20px #0f0040;
+    /* background-color: white; */
+    /* box-shadow: 0 0 20px #0f0040; */
 }
 
 header {
@@ -35,11 +35,11 @@ button {
     padding: 10px;
     margin: 10px;
     min-width: 100px;
-    background-color: #3939d6;
+    background: linear-gradient(135deg, #00feba, #5b548a);
     color: white;
     border: none;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #0f0040;
+    /* box-shadow: 3px 3px 5px #0f0040; */
     transition: transform 0.1s ease-out;
 }
 
@@ -53,19 +53,17 @@ button:active {
 }
 
 .card {
-    border: 1px solid #ccc;
-    background-color: #eee;
+    background: linear-gradient(135deg, #00feba, #5b548a);
     padding: 10px;
     margin: 10px;
     width: 200px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px grey;
     transition: transform 0.3s ease-out;
+    color: white;
 }
 
 .card:hover {
-    background-color: #fff;
     transform: scale(1.05);  
 }
 
@@ -81,11 +79,12 @@ p {
 
 #ageId {
     font-size: 18px;
+    font-weight: 600;
 }
 
 #marriageStatusId {
     font-size: 18px;
-    color: blue;
+    font-weight: 600;
 }
 
 img {
@@ -93,4 +92,5 @@ img {
     height: auto;
     padding: 10px;
     margin-top: 10px;
+    filter: invert(100%) grayscale(100%);
 }
