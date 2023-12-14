@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="./script.js"></script>
-    <title>JS Local Storage</title>
+    <script src="./script.js"></script>
+    <title>Form with style</title>
 </head>
 <body>
     <div class="container">
-        <header class="header text-center">
+        <header>
             <h1 class="title">Local Storage</h1>
-            <p>Enter a Key and the corresponding Value to be stored in your browsers local storage.</p>
+            <p class="description">Enter a Key and the corresponding Value to be stored in your browsers local storage.</p>
         </header>
-        <form id="inputForm" class="form" autocomplete="off">
-            <div class="formGroup">
-                <label for="key">Key: </label>
-                <input type="text" id="key" placeholder="Enter your key">
-                
-            </div>
-            <div class="formGroup">
-                <label for="value">Value: </label>
-                <input type="text" id="value" placeholder="Enter the value"> 
-            </div>
-            <div class="formGroup">
-                <button class="formBtn" id="submitBtn">Submit</button>
-                <button class="formBtn" id="clearBtn">Clear Storage</button>
-            </div>
-            <div class="formGroup">
-                <input type="text" id="searchLS" placeholder="Search local storage">
-                <button class="formBtn" id="readLSBtn">Read Storage</button>
-                <button class="formBtn" id="resetLSBtn">Reset</button>
-                <div id="storageReadOut">
-                    Local storage data
-                </div>
-            </div>
-        </form>
+        <div class="formGroup">
+            <label for="keyInput" id="keyLabel">Key</label>
+            <input type="text" name="key" id="keyInput" placeholder="Enter the key">
+        </div>
+        <div class="formGroup">
+            <label for="valueInput" id="valueLabel">Value</label>
+            <input type="text" name="key" id="valueInput" placeholder="Enter the value">
+            <button class="formBtn" id="addBtn">Add</button>
+        </div>
+        <div class="formGroup">
+            <input type="text" name="search" id="searchInput" placeholder="Search using key">
+            <button class="formBtn" id="searchViewBtn">Search/View</button>
+            <button class="formBtn" id="resetBtn">Reset</button>
+            <button class="formBtn" id="clearBtn">Clear</button>
+        </div>
+        <div class="localStorageData">
+            <table class="dataTable" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="localStorageBody">
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
