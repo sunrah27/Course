@@ -9,7 +9,8 @@ let JSONString = `{
 localStorage.setItem('myObject', JSONString);
 
 const myBtn = document.getElementById('myBtn');
-const container = document.getElementById('container')
+const clearBtn = document.getElementById('clearBtn');
+const container = document.getElementById('container');
 
 function displayObjectFromLocalStorage() {
     const storedJSONString = localStorage.getItem('myObject');
@@ -25,7 +26,7 @@ function displayObjectFromLocalStorage() {
         ageElement.id = 'ageId';
         let marriageStatusElement  = document.createElement('p');
         marriageStatusElement.id = 'marriageStatusId';
-        
+
         let imageElement = document.createElement('img');
         let cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
@@ -49,3 +50,7 @@ myBtn.addEventListener('click', () =>{
     container.innerHTML = '';
     displayObjectFromLocalStorage();
 });
+
+clearBtn.addEventListener('click', () =>{
+    container.innerHTML = '';
+})
