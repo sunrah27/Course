@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } else {
             const row = document.createElement('tr');
-            row.innerHTML = `<td>No data in local storage.</td><td></td>`;
+            row.innerHTML = `<td colspan="2">No data in local storage.</td>`;
             localStorageBody.appendChild(row);
     }};
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayNotFoundRow(key) {
         console.log('displayNotFoundRow');
         const row = document.createElement('tr');
-        row.innerHTML = `<td>Key not found: ${key}</td><td></td>`;
+        row.innerHTML = `<td colspan="2">Key not found: ${key}</td>`;
         localStorageBody.appendChild(row);
     };
 
