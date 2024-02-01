@@ -1,0 +1,5 @@
+-- inner join
+-- left join - all data from the first table is displayed with the data from the second table is added to the first table
+-- right join - opposite of left join, the data is displayed from the second table and the data from the first table is added to the second table
+-- cross join - data from both table are displayed
+-- Join displays data from multiple tables and union displays data from multiple select statements
