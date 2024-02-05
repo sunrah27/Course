@@ -1,5 +1,7 @@
-print(2*2)
+def varDic(pName, pAge, **kwargs):
+    print(f"name is {pName} and age {pAge}")
 
-print(2+3)
+    for aKey,aValue in kwargs.items():
+        print(aKey,aValue)
 
-print(9/4)
+varDic = ("a", "v")
