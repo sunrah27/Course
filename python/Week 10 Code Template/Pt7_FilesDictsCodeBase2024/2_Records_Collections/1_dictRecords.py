@@ -15,6 +15,22 @@ Attributes are sometimes referred to as fields.
 
 "To Do: Predict, then Run, and then Investigate"
 # create a dictionary 
+userDetails1 = {'fname': 'shanur islam', 'address': 'disney land', 'interest': 'coding', 'age': '35'}
+userDetails1 = {'fname': 'shanur islam', 'address': 'disney land', 'interest': 'coding', 'age': '35'}
+
+print(userDetails1.items())
+print(userDetails1.keys())
+print(userDetails1.values())
+print(userDetails1.get('fname'))
+print(userDetails1.pop('address'))
+print(userDetails1.popitem())
+userDetails1.update({'email': 'example@example.com'})
+print(userDetails1)
+userDetails2 = userDetails1.copy()
+print(userDetails2)
+userDetails1.clear()
+print(userDetails1)
+
 
 
 "Using dictionary methods"
@@ -38,12 +54,13 @@ Attributes are sometimes referred to as fields.
 # Modify: The for loop block above to loop through the keys and the values and format your output
 
 # create a dictionary 
+dict1 = {1:"JavaScript", 2:"HTML", 3:"CSS", 4:"Python"}
 dict2 = {2:"Python", 3:"HTML", 4:"CSS"}
 print(f"Dictionary 2 {dict2}")
 
 
 # Use of the Update method to merge two dictionaries
-dict2.update(dict2)
+dict2.update(dict1)
 print(f"Updated dictionary 1\n{dict2}")
 
 "To Do: Task 2: Research: Look up Pop vs popItem explaind comment the code below to explain the difference"
@@ -61,15 +78,15 @@ print(dict2)
 # We can delete a key-value pair from a dictionary using the del keyword followed
 # by the key value to be deleted enclosed in [].
 
-del dict1[2]
+del dict2[2]
 
 
 # update dictionary value using the key
-dict1[1] = "Emma Smith"
+dict2[1] = "Emma Smith"
 user={"interests" :"coding"}
 
 print(user)
 user["interests"] = "Football"
 
-print(dict1)
+print(dict2)
 print(user)
